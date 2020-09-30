@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Page 5</title>
+			<script>function popup()
+					{
+						var x = document.getElementById("fullname").value;
+						var y = document.getElementById("email").value;
+						var z = +document.getElementById("number").value;
+						var a = document.getElementById("subject").value;
+							
+						if(Number.isInteger(z) === false)
+						{
+							alert("Error, invalid phone number entered! Please try again");
+							document.getElementById("fullname").value = "";
+							document.getElementById("email").value = "";
+							document.getElementById("number").value = "";
+							document.getElementById("subject").value = "";
+						}	 
+							
+						else if(x == "" || y == "" || z == "")
+						{
+							alert("Error, you must fill out every field! Please try again");
+							document.getElementById("fullname").value = "";
+							document.getElementById("email").value = "";
+							document.getElementById("number").value = "";
+							document.getElementById("subject").value = "";
+						}	
+						
+						else
+						{
+							alert("Thank you for your submission!");
+							document.getElementById("fullname").value = "";
+							document.getElementById("email").value = "";
+							document.getElementById("number").value = "";
+							document.getElementById("subject").value = "";
+						}
+					}
+			</script>
+		<link rel="stylesheet" type="text/css" href="project.css">
+	</head>
+	<body>
+		<header class="header"><a href="mainpage.html"><img alt="Seskauskas's Fast Foods" src="Screenshot_2.png" class="logo"></a></header>
+		<nav>
+			<ul class="menu">
+				<li><a href="mainpage.html">Home</a></li>
+				<li><a href="p2.html">Menu</a></li>
+				<li><a href="p3.html">Reservations</a></li>
+				<li><a href="p4.html">About us</a></li>
+				<li><a href="p5.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<p class="Headers">Our Contact Us Form</p>
+		<form class="form" action="myphp.php">
+			<label for="fullname">Full Name</label>
+				<input type="text" id="fullname" placeholder="Your name here...">
+			<label for="email">Email</label>
+				<input type="text" id="email" placeholder="Your email here...">
+			<label for="number">Phone Number</label>
+				<input type="number" id="number" placeholder="Your phone number here...">
+			<label for="subject">Subject</label>
+				<textarea id="subject" placeholder="Tell us what you think..." style="height: 200px"></textarea>
+			<input type="button" value="Submit" onclick="popup()">
+		</form>
+		<p class="Headers">Our First Restaurant</p>
+			<p id="map"><iframe class="map" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%2076%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(Seskauskas's%20Fast%20Foods)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed"></iframe></p>
+			<p class="details">These are our opening hours:</p>
+			<p class="details">(We only close on Christmas Day)</p>
+			<ul class="hours">
+				<li class="hourslist">Monday: 10:00 - 21:00</li>
+				<li class="hourslist">Tuesday: 10:00 - 21:00</li>
+				<li class="hourslist">Wednesday: 10:00 - 21:00</li>
+				<li class="hourslist">Thursday: 10:00 - 22:00</li>
+				<li class="hourslist">Friday: 10:00 - 00:00</li>
+				<li class="hourslist">Saturday: 12:00 - 00:00</li>
+				<li class="hourslist">Sunday &amp; Bank Holidays: 12:00 - 20:00</li>
+			</ul>
+			<p class="details">
+				You could call us in-store during our working hours<br>
+				Our phone number is: 020 911 0109<br>
+				Or, if you would like to email us, please email us at patrikas.seskauskas@ucdconnect.ie<br>
+				Also, if you would like to pop into our restaurant with any queries, our staff would be happy to help
+			</p>
+		<footer>
+			<nav>
+				<ul class="media">
+					<li><a href="https://www.facebook.com/"><img alt="Facebook" src="f_logo_RGB-Blue_144.png" class="footer-logos"></a></li>
+					<li><a href="https://www.twitter.com/"><img alt="Twitter" src="Twitter_Social_Icon_Circle_Color.png" class="footer-logos"></a></li>
+					<li><a href="https://www.instagram.com/"><img alt="Instagram" src="IG_Glyph_Fill.png" class="footer-logos"></a></li>
+				</ul>
+			</nav>
+			<p>&reg; 2020 Seskauskas's Fast Foods&trade;<br>
+			Papyrus font made from <a href="http://www.onlinewebfonts.com" class="credit">oNline Web Fonts</a> is licensed by CC BY 3.0</p>
+		</footer>
+	</body>
+	</html>

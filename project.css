@@ -1,0 +1,257 @@
+@font-face
+{
+	font-family: myFont;
+	src: url(a0e1b1883c0cf520e9c50d0cd91cd0d0.woff);
+}
+.menu
+{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li
+{
+	display: inline-block;
+	float: none;
+	text-align: center;
+}
+li a
+{
+	display: inline-block;
+	float: none;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 18px;
+}
+li a:hover
+{
+	background-color: black;
+}
+.form
+{
+	font-family: Arial, Helvetica, Sans-serif;
+	border-radius: 5px;
+	background-color: #990000;
+	padding: 20px;
+	padding-top: 0;
+}
+input[type=text], input[type=number], input[type=date], input[type=time], select, textarea
+{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+input[type=button]
+{
+	background-color: #eb3434;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+label
+{
+	color: white;
+}
+input[type=button]:hover, body, input[value=submit]:hover
+{
+	background-color: #990000;
+}
+p
+{
+	font-family: Arial, Helvetica, Sans-serif;
+	color: white;
+}
+.media
+{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	overflow: hidden;
+}
+.header
+{
+	background-color: #990000;
+	text-align: center;
+}
+.map
+{
+	width: 50%;
+	height: 475px;
+	border: 0;
+	margin: 0;
+	display: block;
+}
+.hourslist
+{
+	display: block;
+	text-align: center;
+	font-family: myFont;
+	color: white;
+	font-size: 17px;
+}
+.sidebar
+{
+	width: 5%;
+	position: fixed;
+	z-index: 0;
+	background-color: #990000;
+	overflow-x: hidden;
+	padding: 8px;
+}
+.sidebar a
+{
+	padding: 8px 8px 8px 8px;
+	background-color: #990000;
+	display: block;
+}
+.sidebar a:hover, .reservations-click:hover 
+{
+	opacity: 0.8;
+}
+.drinks, .teaNcoffee, .sides, .mains
+{
+	text-align: center;
+	color: white;
+	font-family: myFont;
+	font-size: 12px;
+}
+#drinks, #teaNcoffee, #sides, #mains, .Headers
+{
+	text-align: center;
+	color: white;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 30px;
+}
+.details
+{
+	text-align: center;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 18px;
+}
+#container
+{
+	width: 100%;
+	background-color: #990000;
+	margin: auto;
+}
+.help-wanted
+{
+	width: 30%;
+	height: 400px;
+	background-color: #990000;
+	padding: 40px;
+	border: 5px solid white;
+	text-align: center;
+	color: white;
+	float: left;
+	margin-left: 10%;
+}
+.deals-subscription
+{
+	width: 30%;
+	height: 400px;
+	background-color: #990000;
+	padding: 40px;
+	border: 5px solid white;
+	text-align: center;
+	color: white;
+	float: right;
+	margin-right: 10%;
+}
+input[value=submit]
+{
+	background-color: #eb3434;
+	color: white;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.collage
+{
+	width: 100%;
+	padding-bottom: 15px;
+}
+.reservations-click
+{
+	font-family: myFont;
+	color: white;
+}
+#deal-number
+{
+	width: 60%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+b
+{
+	font-size: 20px;
+}
+.FAQ
+{
+	color: white;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 18px;
+}
+#questions, #questions1, #questions2, #questions3, #questions4, #questions5, #alert, #alert1
+{
+	color: white;
+	font-family: myFont;
+	font-size: 17px;
+}
+.payment
+{
+	font-family: Arial, Helvetica, Sans-serif;
+	text-align: left;
+	font-size: 22px;
+}
+.credit
+{
+	color: white;
+}
+.logo
+{
+	width: 30%;
+}
+.footer-logos
+{
+	width: 45px;
+	height: 45px;
+}
+.sidebar-icons
+{
+	width: 60px;
+	height: 60px;
+}
+#map
+{
+	display: flex;
+	justify-content: center;
+}

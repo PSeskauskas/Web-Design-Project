@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Seskauskas' Fast Foods</title>
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<script>function popup()
+					{
+						alert("Thank you for your submission!");
+						document.getElementById("CV").value = "";
+					}
+				function popup_number()
+					{
+						var x = +document.getElementById("deal-number").value;
+						
+						if(Number.isInteger(x) === false)
+						{
+							alert("Error, you've entered an invalid phone number! Please try again");
+							document.getElementById("deal-number").value = "";
+						}
+						
+						else if(Number.isInteger(x) === true)
+						{
+							alert("Thank you for your subscription!");
+							document.getElementById("deal-number").value = "";
+						}
+					}
+		</script>
+	</head>
+	<body>
+		<header class="header"><a href="mainpage.html"><img alt="Seskauskas's Fast Foods" src="Screenshot_2.png" class="logo"></a></header>
+		<nav>
+			<ul class="menu">
+				<li><a href="mainpage.html">Home</a></li>
+				<li><a href="p2.html">Menu</a></li>
+				<li><a href="p3.html">Reservations</a></li>
+				<li><a href="p4.html">About us</a></li>
+				<li><a href="p5.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<img class="collage" src="collage.png" alt="Collage"><br>
+		<footer>
+			<div id="container">
+				<div class="help-wanted">
+					<p class="Headers">HELP WANTED</p>
+					<p id="alert">We are looking for waiters/waitresses, delivery drivers, chefs, board members and executives to start working full/part time for us in the coming months as we plan to unveil our new restaurants and to take our brand to the next level, if you would like to apply for a position at Seskauskas's Fast Foods, please hand your CV into our restaurant on Grafton Street, otherwise upload your CV to our website and we will get back to you as soon as possible</p>
+					<form action="myphp.php">
+						<input type="file" id="CV" name="filename">
+						<input type="button" value="submit" onclick="popup()">
+					</form>
+				</div>
+				<div class="deals-subscription">
+					<p class="Headers">EXCLUSIVE DEALS</p>
+					<p id="alert1">If you would like to subscribe to our exlusive deals please enter your phone number in the text box below. If you subscribe, you will receive weekly discounts and vouchers on various different items from our menu and some meal deals by text. These deals are issued every Tuesday and last until closing time on the following Monday
+					<form class ="deals" action="myphp.php">
+						<input type="text" id="deal-number" name="deal-number">
+						<input type="button" value="submit" onclick="popup_number()">
+					</form>
+				</div>
+			</div>
+			<nav>
+				<ul class="media">
+					<li><a href="https://www.facebook.com/"><img alt="Facebook" src="f_logo_RGB-Blue_144.png" class="footer-logos"></a></li>
+					<li><a href="https://www.twitter.com/"><img alt="Twitter" src="Twitter_Social_Icon_Circle_Color.png" class="footer-logos"></a></li>
+					<li><a href="https://www.instagram.com/"><img alt="Instagram" src="IG_Glyph_Fill.png" class="footer-logos"></a></li>
+				</ul>
+			</nav>
+			<p>&reg; 2020 Seskauskas's Fast Foods&trade;<br>
+			Papyrus font made from <a href="http://www.onlinewebfonts.com" class="credit">oNline Web Fonts</a> is licensed by CC BY 3.0</p>
+		</footer>
+	</body>
+	</html>
